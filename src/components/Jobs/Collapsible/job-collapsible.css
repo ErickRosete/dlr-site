@@ -1,0 +1,32 @@
+.job-collapsible {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    border-radius: 0.5rem;
+    max-width: 80%;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.job-collapsible-title {
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.job-collapsible-content {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+}
+
+.job-collapsible-footer {
+    display: flex;
+    justify-content: space-between
+}
+
+.job-collapsible-footer .icon {
+    font-size: 1.5rem;
+}

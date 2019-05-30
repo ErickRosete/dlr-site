@@ -1,7 +1,18 @@
 :root {
-  --main-bg-color: #0485B7;
-  --main-contrast-color: #005F7C;
-  --secondary-bg-color: #403d39;
-  --secondary-contrast-color: #262421;
-  --light-gray: #f7f7f7;
+  --main-bg-color: #2D3B97;
+  --main-contrast-color: rgb(25, 35, 110);
+  --secondary-bg-color: #333333;
+  --secondary-contrast-color: #222222;
+  --light-gray: #e2e2e2;
+}
+
+.btn-main {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.btn-main:hover, .btn-main:active, .btn-main:focus {
+  background-color: var(--secondary-contrast-color);
 }

@@ -1,0 +1,17 @@
+/* .jobs {
+    margin-top: 2rem;
+} */
+
+.jobs .jobs-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 3rem auto;
+    color: var(--secondary-bg-color);
+}
+
+.jobs .jobs-collapsibles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
