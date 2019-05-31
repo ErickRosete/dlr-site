@@ -6,6 +6,8 @@ import HomePage from "./pages/Home/Home"
 import JobsPage from "./pages/Jobs/Jobs"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
+  faPhone,
+  faEnvelope,
   faHome,
   faChevronLeft,
   faMapMarkerAlt,
@@ -13,7 +15,7 @@ import {
   faChevronCircleLeft,
   faChevronCircleRight,
   faChevronCircleDown,
-  faWindowClose
+  faWindowClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { ApolloProvider } from "react-apollo";
@@ -31,6 +33,8 @@ class App extends Component {
       faFacebook,
       faLinkedin,
       faSearch,
+      faPhone,
+      faEnvelope,
       faHome,
       faWindowClose,
       faChevronLeft,

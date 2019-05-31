@@ -29,6 +29,11 @@ p, li {
   font-size: 1.1rem;
 }
 
+.mw-90 {
+  max-width: 100%;
+  margin: auto;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: calc(2vw + 2vh);
@@ -41,5 +46,8 @@ p, li {
   }
   .btn-main {
     font-size: calc(1vw + 1vh);
+  }
+  .mw-90 {
+    max-width: 90%;
   }
 }

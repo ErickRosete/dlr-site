@@ -1,28 +1,60 @@
 footer {
-    text-align: center;
-}
-
-.footer__comp {
     background-color: var(--secondary-bg-color);
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
-.footer__dev {
-    background-color: var(--main-bg-color);
-    padding: 0.25rem;
-}
-
-footer span, footer a, footer p, footer h3 {
+footer span, footer a, footer p {
     color: white;
-    font-size: large;
+    font-size: 1rem;
 }
 
-footer p {
-    margin-bottom: 0
+footer h3 {
+    color: red;
+    font-size: 1.25rem;
 }
 
-footer img {
+footer .mw-90 {
+    margin-bottom: 1rem;
+}
+
+footer .location {
+    margin-bottom: 1rem;
+}
+
+footer .list-tile {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+footer .list-tile .icon {
+    font-size: 1.2rem;
+}
+
+footer .list-tile span {
+    margin-left: 0.5rem;
+    font-weight: 200;
+}
+
+footer .center-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+footer .logo {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+footer .astra-logo {
     margin-left: 0.5rem;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    footer .right-line {
+        border-right: 1px solid white;
+    }
+}
