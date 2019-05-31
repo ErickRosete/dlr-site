@@ -1,0 +1,20 @@
+.sec-navigation .navbar-nav .nav-link.active, .sec-navigation .navbar-nav .nav-link:focus, .sec-navigation .navbar-nav .nav-link:hover, .sec-navigation .navbar-brand.active, .sec-navigation .navbar-brand:focus, .sec-navigation .navbar-brand:hover, .sec-navigation .dropdown-item:focus, .sec-navigation .dropdown-item:hover, .sec-navigation .dropdown-item:active {
+    color: var(--main-bg-color);
+}
+
+.sec-navigation .navbar-nav .nav-link.active:last-child, .sec-navigation .navbar-nav .nav-link:focus:last-child, .sec-navigation .navbar-nav .nav-link:hover:last-child {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.sec-navigation .navbar-nav .nav-link:last-child {
+    border: 1px solid var(--main-bg-color);
+}
+
+.sec-navigation .navbar-nav .nav-link, .sec-navigation .navbar-brand, .sec-navigation .dropdown-item {
+    color: var(--main-bg-color);
+}
+
+.sec-navigation .navbar, .sec-navigation .dropdown-menu {
+    background-color: white;
+}

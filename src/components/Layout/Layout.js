@@ -1,13 +1,13 @@
 import React from 'react'
-import MainNavigation from "./MainNavigation/MainNavigation";
+import Navigation from "./Navigation/Navigation";
 import Footer from "./Footer/Footer"
 import "./Layout.css";
 
 const Layout = (props) => {
   return (
     <React.Fragment>
-      <MainNavigation navbarColor={props.navbarColor} />
-      <main className="main-content">{props.children}</main>
+      <Navigation backgroundColor={props.navbarColor} secondary={props.secondaryNavbar} />
+      <main className="main-content" style={{ margin: props.mainMargin }}>{props.children}</main>
       <Footer />
     </React.Fragment>
   );

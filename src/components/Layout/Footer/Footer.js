@@ -41,7 +41,7 @@ const Footer = () => {
           <Col md={4} xs={12} className="right-line">
             <div className="mw-90">
               <h3>Ensenada</h3>
-              <p>Carretera Ensenada - Texate Km 104, El Sauzal de Rodríguez</p>
+              <p>Carretera Ensenada - Tecate Km 104, El Sauzal de Rodríguez</p>
               <div className="list-tile">
                 <FontAwesomeIcon className="icon" icon="phone" />
                 <span>Tel. +52 (646) 178-10-20</span>
