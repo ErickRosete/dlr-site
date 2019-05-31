@@ -10,9 +10,36 @@
   background-color: var(--secondary-bg-color);
   color: white;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .btn-main:hover, .btn-main:active, .btn-main:focus {
   background-color: var(--secondary-contrast-color);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: calc(2vw + 2vh);
+  }
+  h2 {
+    font-size: calc(1.5vw + 1.5vh);
+  }
+  p, li {
+    font-size: calc(0.9vw + 0.9vh);
+  }
+  .btn-main {
+    font-size: calc(1vw + 1vh);
+  }
 }
