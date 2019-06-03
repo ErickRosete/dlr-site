@@ -1,3 +1,26 @@
 .quotation {
-    background-color: var(--main-bg-color)
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
+
+.quotation .quotation-form {
+    text-align: center;
+}
+
+.quotation .quotation-form .quotation-title {
+    margin-bottom: 7.5vh;
+    margin-top: 10vh;
+    font-weight: bold;
+}
+
+.quotation .quotation-form button {
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 600px) {}
