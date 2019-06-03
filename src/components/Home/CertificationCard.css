@@ -1,0 +1,33 @@
+.certification-card {
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 1.5rem 3rem;
+}
+
+.certification-card:hover {
+    background-color: var(--light-gray);
+}
+
+.certification-card img {
+    width: 4rem;
+}
+
+.certification-card p {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+@media (min-width: 600px) {
+    .certification-card {
+        padding: 2.5rem 4.5rem;
+    }
+    .certification-card img {
+        width: 5rem;
+    }
+    .certification-card p {
+        font-size: 1.5rem;
+    }
+}

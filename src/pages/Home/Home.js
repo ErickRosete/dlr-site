@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 import Layout from "../../components/Layout/Layout";
 import "./Home.css";
+import CertificationCard from "../../components/Home/CertificationCard";
 
 import Link from "react-router-dom/Link";
 import ReactPlayer from "react-player";
+import customerLogo from "../../assets/images/home/astra-blanco.png";
 
 const transparent = "#00000000";
 const mainColor = "#2D3B97";
@@ -77,6 +79,32 @@ export class HomePage extends Component {
             </div>
           </section>
 
+          <section className="certification">
+            <div className="certification-info">
+              <h2 className="subtitle">Certificaciones</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat enim dui, eget convallis nisi efiicitur vel. Nullam placerat enim dui, eget convallis nisi efficitur vel.</p>
+            </div>
+            <div className="certification-list">
+              <CertificationCard />
+              <CertificationCard />
+              <CertificationCard />
+            </div>
+          </section>
+
+          <section className="customers">
+            <h2 className="subtitle">Clientes satisfechos</h2>
+            <div className="customer-list">
+              <div className="customer-card">
+                <img src={customerLogo} alt="customer"></img>
+              </div>
+              <div className="customer-card">
+                <img src={customerLogo} alt="customer"></img>
+              </div>
+              <div className="customer-card">
+                <img src={customerLogo} alt="customer"></img>
+              </div>
+            </div>
+          </section>
         </div>
       </Layout >
     );
