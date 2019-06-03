@@ -6,15 +6,30 @@
   --light-gray: #e2e2e2;
 }
 
-.btn-main {
-  background-color: var(--secondary-bg-color);
-  color: white;
+.btn {
   font-weight: bold;
   font-size: 1.2rem;
+  color: white;
+}
+
+.btn-big {
+  margin: 0.5rem;
+}
+
+.btn-main {
+  background-color: var(--secondary-bg-color);
 }
 
 .btn-main:hover, .btn-main:active, .btn-main:focus {
   background-color: var(--secondary-contrast-color);
+}
+
+.btn-sec {
+  background-color: red;
+}
+
+.btn-sec:hover, .btn-sec:active, .btn-sec:focus {
+  background-color: darkred;
 }
 
 h1 {
@@ -25,8 +40,12 @@ h2 {
   font-size: 1.5rem;
 }
 
-p, li {
+p, li, .form-control, .form-label {
   font-size: 1.1rem;
+}
+
+.form-control {
+  line-height: 2;
 }
 
 .mw-90 {
@@ -34,20 +53,42 @@ p, li {
   margin: auto;
 }
 
+.mw-70 {
+  max-width: 90%;
+  margin: auto;
+}
+
+.text-red {
+  color: red;
+}
+
 @media (min-width: 600px) {
   h1 {
-    font-size: calc(2vw + 2vh);
+    font-size: calc(2.2vw + 2.2vh);
   }
   h2 {
     font-size: calc(1.5vw + 1.5vh);
   }
-  p, li {
+  p, li, .form-control, .form-label {
     font-size: calc(0.9vw + 0.9vh);
   }
-  .btn-main {
+  .btn {
     font-size: calc(1vw + 1vh);
+  }
+  .btn-big {
+    font-size: calc(1.4vw + 1.4vh);
+    padding: 1.5vh 3vw;
+    border-radius: 1rem;
+  }
+  .form-control {
+    line-height: 2.5;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
   }
   .mw-90 {
     max-width: 90%;
+  }
+  .mw-70 {
+    max-width: 70%;
   }
 }

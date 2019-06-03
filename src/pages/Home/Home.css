@@ -1,0 +1,116 @@
+section {
+    min-height: 60vh;
+}
+
+.home h2.subtitle {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.intro-video {
+    min-height: 0;
+    background-color: black;
+}
+
+.intro-video .player-wrapper {
+    position: relative;
+    /* Player ratio: 100 / (1280 / 720) */
+    padding-top: 56.25%;
+}
+
+.intro-video .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home .about {
+    background-color: #403f62;
+    background-image: url("../../assets/images/home/about.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .about-info {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.home .about-info h2 {
+    margin-bottom: 4vh;
+}
+
+.home .map {
+    background-color: red;
+    background-image: url("../../assets/images/home/mapa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .map h2 {
+    color: white;
+}
+
+.home .quotation {
+    background-color: #403f62;
+    background-image: url("../../assets/images/home/cotiza.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .quotation-info {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.home .quotation-info h2 {
+    margin-bottom: 4vh;
+}
+
+@media (min-width: 600px) {
+    section {
+        min-height: 100vh;
+    }
+    .home h2.subtitle {
+        font-size: calc(2.2vh + 2.2vw);
+    }
+    .intro-video .player-wrapper {
+        padding-top: 100vh;
+    }
+    .home .about {
+        min-height: 100vh;
+    }
+    .home .about-info {
+        width: 70%;
+    }
+    .home .about-info h2 {
+        margin-bottom: 8vh;
+    }
+    .home .about-info p {
+        font-size: calc(1.3vh + 1.3vw);
+    }
+    .home .map h2 {
+        width: 70%;
+    }
+    .home .quotation-info h2 {
+        margin-bottom: 8vh;
+    }
+}
