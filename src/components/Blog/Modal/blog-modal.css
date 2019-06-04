@@ -1,0 +1,37 @@
+.blog-modal .modal-content {
+    border-radius: 2rem;
+    border: 5px solid var(--main-bg-color);
+    overflow: hidden;
+}
+
+.blog-modal .modal-body {
+    padding: 0;
+}
+
+.blog-modal .modal-body img {
+    max-height: 25rem;
+    width: 100%;
+}
+
+.blog-modal .modal-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 1rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.blog-modal .blog-modal-info {
+    padding: 3vw;
+}
+
+@media (min-width: 576px) {
+    .blog-modal .modal-dialog {
+        width: 40rem;
+        max-width: 80%;
+    }
+}

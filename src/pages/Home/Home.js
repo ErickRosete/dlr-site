@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import "./Home.css";
 import CertificationCard from "../../components/Home/CertificationCard";
 
-import Link from "react-router-dom/Link";
+import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import customerLogo from "../../assets/images/home/astra-blanco.png";
 

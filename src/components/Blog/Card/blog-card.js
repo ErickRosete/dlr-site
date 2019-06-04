@@ -11,7 +11,7 @@ const blogCard = (props) => {
                     <h2>{blog.title}</h2>
                     <p className="date">Publicado {blog.date}.</p>
                     <p>{blog.shortDescription}</p>
-                    <button className="btn btn-blue">Leer más</button>
+                    <button onClick={props.onClick} className="btn btn-blue">Leer más</button>
                 </div>
             </div>
         </Col>

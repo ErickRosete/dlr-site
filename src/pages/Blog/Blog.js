@@ -4,9 +4,26 @@ import Layout from "../../components/Layout/Layout";
 import { Container, Row } from "react-bootstrap";
 import blogDetail from "../../assets/images/blog/blog-detail.png";
 import BlogCard from "../../components/Blog/Card/blog-card"
+import BlogModal from "../../components/Blog/Modal/blog-modal"
 import "./Blog.css";
 
 export class BlogPage extends Component {
+
+    state = {
+        selectedBlog: { id: "" },
+        show: false,
+    };
+    handleClose = () => {
+        this.setState({ show: false });
+    }
+    handleShow = (blog) => {
+        this.setState(
+            {
+                selectedBlog: blog,
+                show: true
+            });
+    }
+
     render() {
         var data = {
             blogs: [{
@@ -46,18 +63,21 @@ export class BlogPage extends Component {
                 <div className="blog">
                     <div className="blog-intro">
                         <div className="blog-intro-info">
-                            <h1>Blog</h1>
+                            <h1>{}</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nullam placerat enim dui, eget convallis nisi efficitur ve. Nullam placerat enim dui, eget convallis nisi efficitur vel.</p>
                         </div>
                     </div>
                     <div className="blog-list">
                         <Container>
                             <Row>
-                                {data.blogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)}
+                                {data.blogs.map((blog) =>
+                                    <BlogCard key={blog.id} blog={blog} onClick={this.handleShow.bind(this, blog)} />)}
                             </Row>
                         </Container>
                     </div>
-
+                    <BlogModal
+                        show={this.state.show} blog={this.state.selectedBlog} handleClose={this.handleClose}>
+                    </BlogModal>
                 </div>
             </Layout>
         );
