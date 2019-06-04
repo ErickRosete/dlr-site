@@ -1,0 +1,32 @@
+.blog .blog-intro {
+    background-color: #4d4d71;
+    background-image: url("../../assets/images/blog/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog .blog-intro-info {
+    color: white;
+    padding: 2rem;
+}
+
+.blog .blog-intro-info h1 {
+    text-transform: uppercase;
+    font-size: calc(5vh + 5vw);
+    text-shadow: 5px 5px black;
+}
+
+.blog .blog-list {
+    margin: 10vh 0;
+}
+
+
+@media (min-width: 600px) {
+    .blog .blog-intro-info {
+        padding-top: 10vh;
+        padding-left: 5vw;
+        width: 80%;
+        padding-bottom: 5vh;
+    }
+}

@@ -57,8 +57,6 @@ export class JobsPage extends Component {
                 location: "Ensenada, B.C."
             }]
         }
-
-        console.log(data)
         return (
             <Layout>
                 <div className="jobs">
