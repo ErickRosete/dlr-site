@@ -1,0 +1,77 @@
+.job-modal .modal-body {
+    padding: 0;
+}
+
+.job-modal .modal-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 1rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid transparent;
+}
+
+.job-modal .logo {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.job-modal .job-info {
+    padding: 3vw;
+    background-color: var(--main-bg-color);
+    color: white;
+    border-radius: 0.75rem/1.25rem;
+    text-align: center;
+}
+
+.job-modal .job-info h2 {
+    font-weight: bold;
+}
+
+.job-modal .job-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.job-modal .job-info .icon {
+    font-size: 1.3rem;
+    margin-right: 0.1rem;
+}
+
+.job-modal .job-form {
+    padding: 5vh 0;
+}
+
+.job-modal .job-form h2 {
+    color: var(--main-bg-color);
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.job-modal .job-form .form-control {
+    border: 4px solid var(--main-bg-color);
+}
+
+.job-modal .job-form button {
+    margin: auto;
+    margin-top: 2rem;
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .job-modal .modal-dialog {
+        width: 40rem;
+        max-width: 80%;
+    }
+    .job-modal .job-info p {
+        font-size: calc(1.1vh + 1.1vw)
+    }
+    .job-modal .job-info .icon {
+        font-size: calc(1.3vh + 1.3vw);
+    }
+}

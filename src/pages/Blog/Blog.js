@@ -63,7 +63,7 @@ export class BlogPage extends Component {
                 <div className="blog">
                     <div className="blog-intro">
                         <div className="blog-intro-info">
-                            <h1>{}</h1>
+                            <h1>Blog</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nullam placerat enim dui, eget convallis nisi efficitur ve. Nullam placerat enim dui, eget convallis nisi efficitur vel.</p>
                         </div>
                     </div>

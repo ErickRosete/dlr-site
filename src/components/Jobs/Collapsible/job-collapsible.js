@@ -31,7 +31,7 @@ const jobCollapsible = (props) => {
 
             <div className="job-collapsible-footer">
                 <p><FontAwesomeIcon className="icon" icon="map-marker-alt" />{" " + props.job.location}</p>
-                <button type="button" className="btn btn-main">Solicitar</button>
+                <button type="button" className="btn btn-main" onClick={props.onClick}>Solicitar</button>
             </div>
         </div>
     )
